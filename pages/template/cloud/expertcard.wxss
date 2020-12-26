@@ -1,0 +1,37 @@
+/* pages/template/cloud/expertcard.wxss */
+.expert-card{
+  width: 690rpx; 
+  padding: 25rpx 0;
+}
+.expert-card>view:first-child image{
+  width:200rpx;
+  height: 250rpx; 
+  border-radius: 6rpx;
+}
+.expert-card>view:last-child{
+  flex:1;
+  padding-left:30rpx
+}
+.expert-card  .title>view:first-child{
+  width: 300rpx; 
+}
+.expert-card  .title>view:first-child>view+view{
+ padding-bottom: 10rpx; 
+}
+.star image{
+  width:22rpx; 
+  height:22rpx;
+  margin:0 5rpx 
+}
+.expert-card  .title>view:first-child>view:first-child{
+  margin-bottom: 10rpx; 
+}
+.expert-card  .title>view:last-child{
+  padding-top:9rpx; 
+}
+.expert-card  .title>view:last-child>button:first-child{
+   margin-right:20rpx;
+}
+.expert-card>view:last-child>view:nth-child(2){ 
+  padding-bottom:15rpx;
+}

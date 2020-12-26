@@ -1,0 +1,75 @@
+<!--助理标签-->
+<view class="tagbg">
+</view>
+<view class="assistant"> 
+   <view class="flexL flex-row ">
+    <view class=" assistant-avatar">
+      <image src="{{assistantInfo.thumb}}" mode="aspectFill"></image>
+    </view>
+    <view class="assistant-info">
+       <view class="title36 ">{{assistantInfo.name}}</view>
+       <view class=" flexL flex-row align-center "><image src="../../../static/tabbar/wechat.png" mode="aspectFill"></image><text class="title26 black">微信号：{{assistantInfo.wechat}}</text></view>
+    </view> 
+  </view>
+  <view class="assistant-profile title22 grey"> 
+    {{assistantInfo.profile}}
+  </view>
+  <view class="width100 flex justify-end">
+    <button class="cu-btn round cu-btnfont26 silver">电话沟通</button>
+    <button class="cu-btn round cu-btnfont26 bg-tobule">在线联系</button>                          
+  </view>
+</view>
+<view class="container">
+    <view class="navcloud flex flex-row align-end">
+        <view class="{{state===0?'title34 bule':'unsel'}}" bindtap="changeState" data-state="0">专属会计</view>
+        <view class="{{state===1?'title34 bule':'unsel'}}" bindtap="changeState" data-state="1">企业服务</view>
+    </view>
+    <!--专属会计-->
+    <view wx:if="{{state===0}}" >
+      <view class="accountant-card flex flex-row" wx:for="{{accountant}}" wx:key="*this">
+        <view>
+          <image src="{{item.thumb}}" mode="aspectFill"></image>
+        </view>
+        <view >
+           <view class="title flex flex-row">
+               <view>
+                 <view class="title36 text-ellipsis ">{{item.name}}</view>
+                 <view>
+                  <image src="../../../static/test/star.png" mode="aspectFill"></image> 
+                  <image src="../../../static/test/star.png" mode="aspectFill"></image>
+                  <image src="../../../static/test/star.png" mode="aspectFill"></image>
+                  <image src="../../../static/test/star.png" mode="aspectFill"></image>
+                  <image src="../../../static/test/star.png" mode="aspectFill"></image>
+                </view>
+               </view> 
+               <view class="flex flex-row">
+                <button class="cu-btn round cu-btnfont24 silver">电话沟通</button>
+                <button class="cu-btn round cu-btnfont24 bg-tobule">在线联系</button>
+               </view>
+           </view>
+           <view class="width100 blackless title26 text-ellipsis">{{item.qualifications}}</view>
+           <view>
+             <view class="cu-tag radius  line-gray" wx:for="{{item.serverTag}}" wx:key="*this">
+              {{item}}
+             </view>
+           </view>
+        </view>
+      </view>   
+    </view>
+    <view wx:if="{{state===1}}" > 
+        <view class="server-card flex flex-row" wx:for="{{serverPackage}}" wx:key="*this">
+          <view class="scard-left">
+            <view class="title30 text-bold text-ellipsis">{{item.name}}</view>
+            <view class="title24 ttlcontent text-ellipsis">服务包内容:</view> 
+            <view class="title24 text-ellipsis">{{item.content}}</view>
+          </view>
+          <view class="scard-right flex flex-column">
+            <view class="text-right title22 red text-ellipsis">￥<text class="text36 red">{{item.price}}</text></view>
+            <view class="text-right title22  red text-ellipsis text-mline">原价￥{{item.oriPrice}}</view>
+          </view>
+        </view> 
+    </view> 
+</view>
+<button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button">开通会员，启用我的云端企业</button>
+
+

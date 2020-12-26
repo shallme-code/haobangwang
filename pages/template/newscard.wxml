@@ -1,0 +1,19 @@
+<!--pages/template/newscard.wxml-->
+<template name="newscard">
+  <view class="think-tank">
+      <view class="flexL flex-column ">
+        <view class="think-card flexL flex-row " >
+          <view><image src="{{img}}" mode="aspectFit"></image></view>
+          <view>
+            <view class="width100 title28 black24 text-ellipsis">{{title}}</view>
+            <view class="width100 title24 grey flexL flex-row midtag">
+              <view class="width50">{{date}}</view>
+              <view class="width50 text-right">阅读次数： {{times}}</view>
+            </view>
+            <view class="width100 title22 greyless text-ellipsis">{{abstract}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+ 
+</template>

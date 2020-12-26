@@ -1,0 +1,14 @@
+<!--pages/template/answer/index.wxml-->
+<template name="answercard">
+  <view class="answer-questions">
+    <view class="answer-card flexL flex-row ">
+      <view class="q-icon">
+        <image src="../../../static/tabbar/Q.png" mode="aspectFit"></image>
+      </view> 
+      <view class="  title30 black24 text-ellipsis">{{title}}</view>
+      <view class="  title26 blackless">{{content}}</view>
+
+    </view>
+  </view>
+
+</template>

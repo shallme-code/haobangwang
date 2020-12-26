@@ -1,0 +1,11 @@
+/* pages/tabbar/cloud/consultation/index.wxss */
+ @import '../../template/cloud/expertcard.wxss';
+.head>view:first-child image{
+  width: 330rpx;
+  height:180rpx;
+  border-radius: 8rpx;
+}
+.head>view:last-child>view{
+  padding :40rpx 100rpx 0 0;
+  
+}

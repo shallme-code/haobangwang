@@ -1,0 +1,10 @@
+<!--components/titletag/index.wxml-->
+ <view class="titletag flex flex-row align-center">
+   <view class="title-icon"></view>
+   <view class="flex flex1 flex-row align-end justify-between">
+     <view class=" ">
+     <text class="text32 text-bold">{{title}}</text> 
+     <text wx:if="{{subtitle!==''}}" class="title24 greyless margin20l vertical-bom">{{subtitle}}</text></view>
+    <view wx:if="{{rightMore!==''}}" class="title24 grey">{{rightMore}}</view>
+    </view> 
+ </view>

@@ -1,0 +1,42 @@
+/* pages/cloud/infodetail/index.wxss */
+.bghead {
+  width: 100%;
+  min-height: 620rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #319AFD;
+}
+/*信息上部*/
+.bghead .baseinfo {
+  padding: 420rpx 50rpx 40rpx 50rpx;
+}
+
+.bghead .baseinfo>view:nth-child(2) {
+  padding: 20rpx 0;
+}
+
+.bghead .baseinfo>view:last-child>view {
+  margin-right: 15rpx
+}
+/*信息下部*/
+.bghead .baseinfobtm {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 40rpx 40rpx 0px 0px;
+  padding: 40rpx 50rpx;
+  position: relative;
+}
+.paddingrl45{
+  padding:0 45rpx
+}
+.share{
+  height: 80rpx;
+}
+.bghead .baseinfobtm>view:first-child{
+  border-bottom: solid 1rpx #F4F6F7 ; 
+}
+/*项目导航条*/
+.navinfo>view{
+ width: 230rpx;
+ text-align: left;
+}

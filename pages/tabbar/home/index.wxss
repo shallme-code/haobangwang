@@ -1,0 +1,110 @@
+@import "../../template/newscard.wxss";
+.banner image,.banner {
+  width: 690rpx;
+  height: 300rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.conguid {
+  display: flex;
+  flex-direction: row;
+}
+
+.guid {
+  background: #F5F7F8;
+  width: 330rpx;
+  height: 110rpx;
+  border-radius: 12rpx;
+}
+
+.guid .guid-icon {
+  width: 58rpx;
+  height: 40rpx
+}
+
+.guid-title {
+  margin-left: 20rpx
+}
+
+.guid:nth-child(even) {
+  margin-left: 30rpx
+}
+
+.guid .guid-dot {
+  width: 24rpx;
+  height: 24rpx;
+  background: #FC5F55;
+  border-radius: 50%;
+  font-size: 16rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 24rpx;
+  margin-left: 6rpx;
+} 
+.main-title{
+  position: relative;
+} 
+.main-title .title-right{
+  text-align: right;
+  position:absolute;
+  bottom:5rpx;
+  right:0
+}
+.commend,.benefits{
+  margin-top:10rpx
+}
+.commend-card{
+width: 320rpx;
+height: 200rpx;
+background: #F5F7F8;
+border-radius: 8rpx;
+margin-top:30rpx;
+padding:20rpx;
+position: relative;
+}
+.commend-card:nth-child(even),.benefits-card:nth-child(even){
+  margin-left:50rpx
+}
+.commend-card view:nth-child(2){
+  margin: 10rpx 0 15rpx 0;
+}
+.commend-card .tag{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 90rpx;
+height: 44rpx;
+}
+
+.commend-card .tag image{
+  width: 100%;
+  height: 100%;
+}
+.commend-card .tag view{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+.adbanner image,.adbanner{
+  width: 690rpx;
+  height: 160rpx;
+}
+.benefits-card{
+  width: 320rpx;
+ border-radius: 8rpx;
+margin-top:30rpx;
+padding:25rpx 5rpx 15rpx 25rpx;
+position: relative;
+}
+.benefits-card image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.benefits-card>view:first-child{
+  width: 190rpx;
+}
+ 

@@ -1,0 +1,130 @@
+/* pages/tabar/cloud/index.wxss */
+.tagbg {
+  width: 100%;
+  height: 272rpx;
+  top: 0;
+  right: 0;
+  background: linear-gradient(0deg, #0660FE 0%, #319AFD 100%);
+  border-radius: 0px 0px 40rpx 40rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.assistant {
+  margin: 40rpx 30rpx 20rpx 30rpx;
+  width: 690rpx;
+  height: 368rpx;
+  background: #FFFFFF;
+  border-radius: 0px 60rpx 0px 60rpx;
+  padding: 40rpx 25rpx;
+}
+
+.assistant-avatar,
+.assistant-avatar image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.assistant-info {
+  padding: 12rpx 25rpx;
+  height: 120rpx;
+  flex: 1;
+}
+
+.assistant-info image {
+  width: 30rpx;
+  height: 30rpx;
+
+}
+
+.assistant-info>view:first-child {
+  padding-bottom: 15rpx;
+}
+
+.assistant-info>view:last-child text {
+  text-indent: 10rpx;
+}
+
+.assistant-profile {
+  line-height: 40rpx;
+  padding: 30rpx 0;
+}
+
+.assistant button {
+  margin: 0 20rpx;
+}
+/* 功能导航 */
+.navcloud{
+  padding: 40rpx 0;
+  text-align:start;
+}
+.navcloud>view{
+  width: 233rpx; 
+  padding: 10rpx 2rpx;
+}
+.navcloud .unsel{ 
+font-size: 30rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #6F6F6F;
+
+}
+/*专属会计*/
+.accountant-card{
+  width: 100%;
+  margin:25rpx 0;
+  
+}
+.accountant-card>view:first-child,.accountant-card>view:first-child image{
+  width:170rpx;
+  height: 220rpx; 
+  border-radius: 6rpx;
+}
+.accountant-card>view:last-child{
+  width: 520rpx;
+  padding-left:30rpx
+}
+.accountant-card  .title>view:first-child{
+  width: 180rpx; 
+}
+.accountant-card  .title image{
+  width:22rpx; 
+  height:22rpx;
+  margin:0 5rpx 
+}
+.accountant-card  .title>view:first-child>view:first-child{
+  margin-bottom: 15rpx; 
+}
+.accountant-card  .title>view:last-child{
+  flex: 1;
+  padding-top:9rpx; 
+}
+.accountant-card  .title>view:last-child>button:first-child{
+   margin-right:20rpx;
+}
+.accountant-card>view:last-child>view:nth-child(2){ 
+  padding:15rpx 0;
+}
+
+/*企业服务*/
+.server-card{
+width:100%; 
+background: #F9FAFB;
+border-radius: 8rpx;
+margin:25rpx 0; 
+padding: 40rpx 30rpx;
+}
+.server-card .scard-left{
+ width: 480rpx;
+}
+.server-card .scard-right{
+  width:210rpx ;
+}
+.server-card .ttlcontent{
+  padding:10rpx 0 15rpx 0
+}
+.server-card:active{
+  background: #F2F9FF;
+}

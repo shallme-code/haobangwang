@@ -1,0 +1,38 @@
+<!--pages/template/cloud/expertcard.wxml-->
+<text>pages/template/cloud/expertcard.wxml</text>
+<template name="expertcard">
+  <view class="expert-card flex flex-row">
+    <view>
+      <image src="{{photo}}" mode="aspectFill"></image>
+    </view>
+    <view>
+      <view class="title flex flex-row">
+        <view>
+          <view class="title36 text-ellipsis ">{{name}}</view>
+          <view class="width100 black24 text26 fw400 text-ellipsis">{{ qualifications}}</view>
+          <view class="flex flex-row justify-between ">
+            <view class="text-ellipsis"><text class="text26 fw500">{{cscount}}</text><text class="title24 grey">人咨询</text></view>
+            <view class="text-ellipsis"><text class="text26 fw500">{{apcount}}</text><text class="title24 grey">人评价</text></view>
+          </view>
+        </view>
+
+        <view class="flex flex-column ">
+          <view class="text-center text26 red text-ellipsis">￥<text class="text36 red">{{price}}</text>起</view> 
+          <view class="star">
+            <image src="../../../static/test/star.png" mode="aspectFill"></image>
+            <image src="../../../static/test/star.png" mode="aspectFill"></image>
+            <image src="../../../static/test/star.png" mode="aspectFill"></image>
+            <image src="../../../static/test/star.png" mode="aspectFill"></image>
+            <image src="../../../static/test/star.png" mode="aspectFill"></image>
+          </view>
+        </view>
+      </view>
+      <view class="width100 silver title24 text-ellipsis">{{organization}}</view>
+      <view>
+        <view class="cu-tag radius  line-gray" wx:for="{{ serverTag}}" wx:key="*this">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,50 @@
+<!--pages/cloud/infodetail/index.wxml-->
+<view class="bghead" style="background-image:url('{{infodetail.photo}}')  ">
+  <view class="baseinfo">
+    <view class="white title40 text-bold text-ellipsis">{{infodetail.name}}</view>
+    <view class="white title24 text-ellipsis">{{infodetail.qualifications[0]}}</view>
+    <view class="white">
+      <view class="cu-tag radius bg-whitetrans20 title22" wx:for="{{infodetail.serverTag}}" wx:key="*this">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="baseinfobtm">
+    <view class="flex flex-row align-end justify-around padbom30">
+      <view class="flex flex-column ">
+        <view class="spacing10 text36">
+          <text class="cuIcon-favorfill lg yellow"></text>
+          <text class="cuIcon-favorfill lg yellow"></text>
+          <text class="cuIcon-favorfill lg yellow"></text>
+          <text class="cuIcon-favorfill lg yellow"></text>
+          <text class="cuIcon-favorfill lg yellow"></text>
+        </view>
+        <view class="margin20TOP title22 silver">客户评价</view>
+      </view>
+      <view class="flex flex-column paddingrl45">
+        <view><text class="text36">{{infodetail.cscount}}</text>人</view>
+        <view class="margin15TOP title22 silver">咨询人数</view>
+      </view>
+      <view class="flex flex-column paddingrl45">
+        <view><text class="text36"> {{infodetail.apcount}}</text>人</view>
+        <view class="margin15TOP title22 silver">评价人数</view>
+      </view>
+      <view class="share  flex align-start">
+        <view class="iconfont title28 icon-share greycc"></view>
+      </view>
+    </view>
+    <view class="flexL flex-row align-center justify-between padtop40">
+      <view class="text-ellipsis title30 black fw500"> {{infodetail.organization}}</view>
+      <view class="iconfont greycc title20 icon-right"></view>
+    </view>
+  </view>
+</view>
+<view class="container">
+  <view class="navinfo flex flex-row align-end  paddingtop20 ">
+    <view class="{{nowNav===0?'title34 bule fw500':'text30'}}" data-nav="0" bindtap="changeState">服务项目</view>
+    <view class="{{nowNav===1?'title34 bule fw500':'text30'}}" data-nav="1" bindtap="changeState">个人介绍 </view>
+    <view class="{{nowNav===2?'title34 bule fw500':'text30'}}" data-nav="2" bindtap="changeState">客户评价</view>
+  </view>
+  <titletag title="服务项目" subtitle='服务器哦昂木' rightMore='查看评价'></titletag>
+</view>
+<import src="../../template/cloud/navtitle.wxml"></import>

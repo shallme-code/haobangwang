@@ -1,0 +1,24 @@
+/* components/titletag/index.wxss */
+.title-icon{
+  content: '';
+  width: 18rpx;
+  height:18rpx;
+  background-color: #ADD7FE;
+  border-radius:5000rpx;
+  position: relative;
+  left: 14rpx;
+}
+.title-icon:after{
+  content: ' ';
+  width: 18rpx;
+  height:18rpx;
+  background-color: #319AFD;
+  border-radius:5000rpx;
+  position: absolute;
+  right: 14rpx;
+}
+.titletag>view:nth-child(2){
+  margin-left: 30rpx;
+  padding: 30rpx 0;
+
+}

@@ -1,0 +1,16 @@
+/* pages/template/mine/option.wxss */
+.option-card{
+   padding: 46rpx 10rpx;
+   width: 100%;
+}
+.option-card>view:first-child image{
+   width: 34rpx;
+   height: 34rpx;
+}
+.option-card>view:last-child{
+   flex: 1;
+   padding-left:30rpx;
+}
+.option-card+.option-card{
+  border-top:solid 1rpx #F4F6F7;  
+}

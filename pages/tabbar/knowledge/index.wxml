@@ -1,0 +1,45 @@
+<!--导航条-->
+<view class="navtop">
+  <scroll-view scroll-x="true" enable-flex='true' class="{{state===1?'margbom30':''}}   flex flex-row">
+    <view class="navbtn">
+      <view class="width100 text-center {{state===0?'cu-btn lg32 bg-tobule tit-btn3ra':'title32 blackless'}}"
+        bindtap="changeState" data-state="0">新闻资讯</view>
+    </view>
+    <view class="navbtn">
+      <view class="width100 text-center {{state===1?'cu-btn lg32 bg-tobule tit-btn3ra':'title32 blackless'}}"
+        bindtap="changeState" data-state="1">专家答疑</view>
+    </view>
+  </scroll-view>
+  <scroll-view wx:if="{{state===1}}" scroll-x="true" enable-flex='true' class=" flex flex-row">
+    <view class="navbtn2">
+      <view class="  text-center cu-btn mid {{answerFaId===-1?'tit-btn3ra bg-Lightblue bule':'blackless bg-trans'}}"   data-index="-1" bindtap="selectFaAnswer">全部</view> 
+    </view>
+    <view class="navbtn2" wx:for="{{answering}}" wx:key="*this"> 
+    <view class="text-center cu-btn mid {{answerFaId===item.id?'tit-btn3ra bg-Lightblue bule':'blackless bg-trans'}} "   
+     data-index="{{item.id}}" bindtap="selectFaAnswer">{{item.title}}</view>
+</view>
+</scroll-view>
+<scroll-view wx:if="{{state===1}}" scroll-x="true" enable-flex='true' class=" flex flex-row">
+  <view class="navbtn2">
+      <view class="  text-center cu-btn mid {{answerChId===-1?'tit-btn3ra bg-Lightblue bule':'blackless bg-trans'}}"   data-index="-1" bindtap="selectChAnswer">全部</view> 
+    </view>
+    <view class="navbtn2" wx:for="{{answeringChild}}" wx:key="*this" wx:for-key="key"> 
+    <view class="text-center cu-btn mid {{answerChId===index?'tit-btn3ra bg-Lightblue bule':'blackless bg-trans'}}"   
+     data-index="{{index}}" bindtap="selectChAnswer">{{item}}</view>
+</view>
+</scroll-view>
+</view>
+<view class="container {{state===0?'padtop120':'padtop340'}}">
+  <view wx:if="{{state===0}}">
+    <block wx:for="{{thinknews}}" wx:key="*this">
+      <template is="newscard" data="{{...item}}"></template>
+    </block>
+  </view>
+  <view wx:if="{{state===1}}">
+    <block wx:for="{{questions}}" wx:key="*this">
+      <template is="answercard" data="{{...item}}"></template>
+    </block>
+  </view>
+</view>
+<import src="../../template/newscard.wxml"></import>
+<import src="../../template/answer/index.wxml"></import>

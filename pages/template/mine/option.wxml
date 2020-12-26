@@ -1,0 +1,12 @@
+<!--pages/template/mine/option.wxml-->
+<template name="optioncard"> 
+    <view class="option-card flexL flex-row  align-center">
+      <view class=" flexL  align-center">
+        <image src="{{iconsrc}}" mode="aspectFit"></image>
+      </view> 
+      <view class="title28 black flexL flex-row align-center justify-between">
+        <view class="text-ellipsis">{{title}}</view>
+        <view class="iconfont greycc title20 icon-right"></view> 
+      </view> 
+    </view>  
+</template>

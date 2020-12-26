@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/cloud/infodetail/index",
+    "pages/cloud/consultation/index",
+    "pages/tabbar/home/index",
+    "pages/tabbar/mine/index",
+    "pages/tabbar/knowledge/index",
+    "pages/tabbar/cloud/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "好棒网",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CFCFCF",
+    "selectedColor": "#319AFD",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/home/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/homeed.png"
+      },
+      {
+        "pagePath": "pages/tabbar/cloud/index",
+        "text": "云端",
+        "iconPath": "static/tabbar/cloud.png",
+        "selectedIconPath": "static/tabbar/clouded.png"
+      },
+      {
+        "pagePath": "pages/tabbar/knowledge/index",
+        "text": "知识",
+        "iconPath": "static/tabbar/knowledge.png",
+        "selectedIconPath": "static/tabbar/knowledgesel.png"
+      },
+      {
+        "pagePath": "pages/tabbar/mine/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/minesel.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

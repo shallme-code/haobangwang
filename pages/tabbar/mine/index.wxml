@@ -1,0 +1,30 @@
+<!--pages/tabar/mine/index.wxml-->
+<view class="container">
+  <view class="userinfo flex flex-row align-center">
+   <view class="cu-avatar xl round " style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);">
+   </view>
+   <view>
+     <view class="title36">{{userInfo.nickname}}<image src="../../../static/tabbar/vip.png" mode="aspectFit"></image></view>
+     <view class="title24 grey">绑定号码：{{userInfo.phone}}</view>
+   </view>
+   <view class="bg-whiteless title26 black">用户资料</view>
+</view>
+<view class="user-op flex flex-row">
+   <view wx:for="{{userOp}}" class="flex   flex-column" wx:key="*this">
+     <image src="{{item.icon}}" mode="aspectFit"></image>
+     <view class="title24 blackless margin15TOP">{{item.title}}</view>
+   </view>
+</view>
+<view class="vip-ad flex flex-row align-center">
+   <image src="../../../static/tabbar/vip-ad.png" mode="aspectFit"></image>
+   <view class="title38 gold"> 开通会员享更多福利</view>
+   <view class="gold title24">立即开通 <text class="iconfont icon-right"></text></view>
+</view>
+</view>
+<view class="optionbox"> 
+    <block wx:for="{{options}}" wx:key="*this">
+      <template is="optioncard" data="{{...item}}"></template>
+    </block>
+  </view> 
+<button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button">退出登录</button>
+<import src="../../template/mine/option.wxml"></import>

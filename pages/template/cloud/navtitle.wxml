@@ -1,0 +1,7 @@
+<!--pages/template/cloud/expertcard.wxml-->
+<text>pages/template/cloud/expertcard.wxml</text>
+<template name="navtitle"> 
+    <view>
+      {{left}}
+    </view>
+</template>

@@ -1,0 +1,86 @@
+<!--首页banner-->
+<view class="container ">
+  <swiper class="banner" indicator-dots="true" autoplay="true">
+    <swiper-item wx:for="{{background}}" wx:key="*this">
+      <image mode="aspectFit" src="{{item.url}}"></image>
+    </swiper-item>
+  </swiper>
+  <!--功能按钮-->
+  <view class="container-item conguid">
+    <view class="guid flexL flex-row align-center justify-center" wx:for="{{guidFunc}}" wx:key="*this">
+      <image class="guid-icon" src="{{item.icon}}" mode="aspectFit"></image>
+      <view class="guid-title title30  ">{{item.title}}</view>
+      <view class="guid-dot" wx:if="{{item.isDot}}">12</view>
+    </view>
+  </view>
+  <!--为您推荐-->
+  <view class="container-item  ">
+    <view class=" main-title flexL flex-row">
+      <view class="title-left title36">
+        为您推荐
+      </view>
+      <view class="title-right title24">
+        更多
+      </view>
+    </view>
+    <view class="commend">
+      <view class="flexL flex-row ">
+        <view class="commend-card" wx:for="{{commend}}" wx:key="*this">
+          <view class="title30">{{item.name}}</view>
+          <view class="title22 grey">{{item.title}}</view>
+          <view class="title22 black">非会员<text class="red">￥</text><text class="price36 red">{{item.price}}</text>/次起
+          </view>
+          <view class="tag" wx:if="{{item.merberPrice===0}}">
+            <image src="../../../static/tabbar/free.png" mode="aspectFit">
+              <view class="white title20 text-center">会员免费</view>
+            </image>
+          </view>
+          <view class="tag" wx:if="{{item.merberPrice>0}}">
+            <image src="../../../static/tabbar/discount.png" mode="aspectFit">
+              <view class="white title20 text-center">会员{{item.merberPrice}}折</view>
+            </image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--广告板块-->
+  <swiper class="container-item adbanner" autoplay="true">
+    <swiper-item wx:for="{{ad}}" wx:key="*this">
+      <image mode="aspectFit" src="{{item.url}}"></image>
+    </swiper-item>
+  </swiper>
+  <!--更多福利-->
+  <view class="container-item  ">
+    <view class=" main-title flexL flex-row">
+      <view class="title-left title36">
+        更多福利
+      </view> 
+    </view>
+    <view class="benefits">
+      <view class="flexL flex-row ">
+        <view class="benefits-card flexL flex-row " style="background:{{item.bgcolor}}" wx:for="{{benefits}}" wx:key="*this">
+          <view>
+          <view class=" title30">{{item.name}}</view>
+          <view class="benefits-icon title22 grey">{{item.title}}</view></view>
+          <view class="benefits-icon"><image src="{{item.icon}}" mode="aspectFit" ></image></view> 
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--英诺智库-->
+  <view class="container-item  ">
+    <view class=" main-title flexL flex-row">
+      <view class="title-left title36">
+        英诺智库
+      </view>
+      <view class="title-right title24">
+        更多
+      </view>
+    </view>
+    <block wx:for="{{thinknews}}" wx:key="*this">
+  <template  is="newscard" data="{{...item}}"></template>
+</block>
+  </view>
+</view>
+<import src="../../template/newscard.wxml"></import>
