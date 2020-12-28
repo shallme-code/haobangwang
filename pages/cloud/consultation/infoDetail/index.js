@@ -12,7 +12,7 @@ Page({
       profile:'国门打开后很多会计人热衷于考ACCA等洋证。目前，市场上对会计人员最认可的是注册会计师证书。对会计人员最认可的是注册会计师证书。', 
       score:5,
       price:25,
-      qualifications:['国家一级资深会计师','国家一级资深会计师'],
+      qualifications:['国家一级资深会计师','国家一级资深会计师','国家一级资深会计师','国家一级资深会计师','国家一级资深会计师'],
       cscount:200,
       apcount:302,
       serverTag:
@@ -45,6 +45,28 @@ Page({
       } 
     ],
     nowNav:0,
+    serPrj:[{
+     img:'../../../../static/tabbar/photo.png',
+     title:'图文咨询',
+     price:29
+    },
+    {
+      img:'../../../../static/tabbar/phone.png',
+      title:'电话咨询',
+      price:59
+     },
+     {
+      img:'../../../../static/tabbar/video.png',
+      title:'视频咨询',
+      price:59
+     },
+     {
+      img:'../../../../static/tabbar/subline.png',
+      title:'线下预约',
+      price:299
+     }
+
+  ],
   },
 
   /**

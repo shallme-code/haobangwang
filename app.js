@@ -10,7 +10,7 @@ App({
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
     // 登录
-    wx.login({
+   /* wx.login({
       success: res => {
         // console.log(res);
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
@@ -22,7 +22,7 @@ App({
             //请求成功
             // console.log(res.data.o.memberInfo);  // 如果为0则为游客
             wx.setStorage({
-              data: res.data.o.memberInfo,
+             // data: res.data.o.memberInfo,
               key: 'userInfoYcx',
             })
             // this.globalData.grade = res.data.o
@@ -63,6 +63,7 @@ App({
     //     }
     //   }
     // })
+    */
   },
   globalData: {
     userInfo: null,

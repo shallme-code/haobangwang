@@ -1,0 +1,22 @@
+<view class="infocard margin20TOP bgcwhite flex felx-row">
+  <view>
+  <image src="{{orderInfo.thumb}}"></image></view>
+  <view class="margin20l">
+    <view class="flex felx-row justify-between">
+      <view>
+        <view class="title36 text-ellipsis padbom20">{{orderInfo.project}}</view>
+        <view class="title26 blackless text-ellipsis ">服务会计：{{orderInfo.serName}}</view>
+      </view>
+      <view class="red text-ellipsis">￥<text class="text36">{{orderInfo.price}}</text>/次</view>
+    </view>
+    <view class="title22 grey margin15TOP line36">
+      {{orderInfo.detail}}
+    </view>
+  </view>
+</view>
+<view class="margin20TOP padlr30 bgcwhite">
+  <option title="优惠券" titleSize="30"  titleColor="#282424"  titleWeight="bold" rightTitle="暂无优惠券可用"></option>
+</view>
+<!--撑起底部-->
+<view class="block120"></view>
+<submitbuy btntext="提交订单" price="59"></submitbuy>

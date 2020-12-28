@@ -1,0 +1,8 @@
+<!--components/star5/index.wxml-->
+<view style="font-size:{{size}}rpx;color:{{lightColor}};letter-space:{{starSpace}}">
+  <text class="cuIcon-favorfill  "></text>
+  <text class="cuIcon-favorfill  "></text>
+  <text class="cuIcon-favorfill  "></text>
+  <text class="cuIcon-favorfill  "></text>
+  <text class="cuIcon-favorfill  "></text>
+</view>

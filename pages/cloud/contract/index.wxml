@@ -1,0 +1,38 @@
+<view class="padbom180 ">
+  <view class="container30pad">
+    <view class="padtm10 ">
+      <titletag title="合同类型"></titletag>
+      <view class="flex justify-between">
+        <view class="radius8 typecard   {{nowType===item.typeid?'bg-tobule':'bg-whiteless'}}" wx:for="{{serviceType}}"
+          wx:key="*this">
+          <view class="text-ellipsis text-bold text30 {{nowType===item.typeid?'white':'black24'}}">{{item.title}}</view>
+          <view class="text-ellipsis title22 margin20TOP {{nowType===item.typeid?'white':'grey'}}">{{item.subtitle}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bgcwhite padlr30 padbom30 margin20TOP">
+    <view class="padtm10 bomline ">
+      <titletag title="合同名称"></titletag>
+      <view class="padbom30">
+        <input placeholder="请输入合同名称" maxlength="50" class="line48" placeholder-class="title26 grey"	></input>
+      </view>
+    </view> 
+    <view class="padtm10   ">
+      <titletag title="合同主体"></titletag>
+      <view class="grid col-3 ">
+        <view class="pricard " wx:for="{{principal}}" wx:key="*this">
+          <view class="pad30 text-ellipsis {{nowPrip===item.id?'bg-tobule radius8 title28 fw500':'comcard title26 silver'}}  width100 text-center" >{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="padtm10   ">
+      <titletag title="上传合同" subtitle="(上传格式仅限.doc)"></titletag>
+      <view class="comcard upload ">
+        <view class="iconfont title40 icon-clip grey"></view>
+        <view class="grey title26"> 上传附件</view>
+      </view>
+    </view>
+  </view> 
+</view>
+<btnbuy btntext="立即购买" price="399"></btnbuy>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "审合同", 
+  "usingComponents": {
+    "titletag":"../../../../components/titletag/index", 
+    "btnbuy":"../../../../components/btnbuy/index"
+  }
+}

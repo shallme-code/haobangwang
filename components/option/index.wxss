@@ -1,0 +1,18 @@
+/* components/option/index.wxss */
+.option-card{
+  padding: 46rpx 0rpx;
+  width: 100%; 
+}
+.option-card:active{
+  background:#F2F9FF
+}
+.option-card>view:first-child image{
+  width: 34rpx;
+  height: 34rpx;
+}
+.option-card>view:last-child{
+  flex: 1;
+ }
+.option-card+.option-card{
+ border-top:solid 1rpx #F4F6F7;  
+}

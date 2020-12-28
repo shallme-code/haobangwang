@@ -1,0 +1,30 @@
+<view class="padbom180 "> 
+<view class="padlr30 padding-top bgcwhite ">
+   <view class="banner">
+    <image src="../../../../static/banner/recontract.png" mode="aspectFill"></image>
+  </view>
+  <view class="padtm10 margbom30 brother-line">
+    <titletag title="服务介绍"></titletag>
+    <text class="title26 blackless line48 ">国门打开后很多会计人热衷于考ACCA等洋证。目前，市场上对会计人员最认可的是注册会计师证书。对会计人员最认可的是注册会计师证书。</text>
+  </view>
+  <view class="padtm10  brother-line">
+    <titletag title="服务价格" price='399'></titletag>
+  </view>
+
+  <view class="padtm10  brother-line">
+    <titletag title="服务流程"></titletag>
+  </view>
+</view>
+<view class="srv-step grid col-2">
+  <view class="stepcard text-center" wx:for="{{srvStep}}" wx:key="*this">
+    <view>
+     <view>
+       <image src="{{item.stepIcon}}" mode="aspectFit"></image>
+     </view>
+     <view class="title24 black margin25TOP text-ellipsis">{{item.step}}、{{item.title}}</view>
+     <view wx:if="{{item.subtitle!==''}}" class="title22 grey text-ellipsis">（{{item.subtitle}}）</view>
+    </view>
+  </view>
+</view>
+</view>
+<btnbuy btntext="立即购买"></btnbuy>

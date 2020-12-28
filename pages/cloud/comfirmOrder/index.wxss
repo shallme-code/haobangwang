@@ -1,0 +1,12 @@
+.infocard {
+  padding: 40rpx 30rpx;
+}
+
+.infocard>view:first-child image {
+  width: 190rpx;
+  height: 230rpx; 
+  border-radius: 6rpx;
+}
+.infocard>view:last-child{
+  padding: 5rpx 0;
+}

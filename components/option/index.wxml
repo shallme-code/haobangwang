@@ -1,0 +1,14 @@
+<!--components/option/index.wxml-->
+<view class="option-card flexL flex-row  align-center">
+  <view wx:if="{{iconsrc!==''}}" class=" flexL margin30l align-center">
+    <image src="{{iconsrc}}" mode="aspectFit"></image>
+  </view>
+  <view class="flexL flex-row align-center justify-between">
+    <view class="text-ellipsis" style="font-size:{{titleSize}}; color:{{titleColor}};font-weight:{{titleWeight}}">
+      {{title}}</view>
+    <view class="flex flex-row align-center">
+      <text class="grey margin20r">{{rightTitle}}</text>
+      <view class="iconfont greycc title20 icon-right"></view>
+    </view>
+  </view>
+</view>

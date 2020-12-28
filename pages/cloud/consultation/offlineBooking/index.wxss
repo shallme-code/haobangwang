@@ -1,0 +1,14 @@
+/* pages/cloud/consultation/offlineBooking/index.wxss */
+page{
+  background-color: #ffffff;
+}
+.bookcard .text>textarea{
+   width: 100%;
+   height: 325rpx; 
+background: #F9FAFB;
+border-radius: 8rpx; 
+}
+.bookcard .text{
+  padding: 30rpx 20rpx 20rpx 20rpx;
+  background: #F9FAFB;
+}

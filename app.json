@@ -1,11 +1,16 @@
 {
   "pages": [
-    "pages/cloud/infodetail/index",
+    "pages/mine/myOrder/index",
+    "pages/cloud/contract/index",
+    "pages/cloud/contract/contractReview/index",
+    "pages/cloud/consultation/offlineBooking/index",
+    "pages/cloud/comfirmOrder/index",
+    "pages/tabbar/cloud/index",
+    "pages/cloud/consultation/infoDetail/index",
     "pages/cloud/consultation/index",
     "pages/tabbar/home/index",
     "pages/tabbar/mine/index",
-    "pages/tabbar/knowledge/index",
-    "pages/tabbar/cloud/index"
+    "pages/tabbar/knowledge/index"
     
   ],
   "window": {

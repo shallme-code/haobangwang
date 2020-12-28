@@ -17,7 +17,7 @@
   position: absolute;
   right: 14rpx;
 }
-.titletag>view:nth-child(2){
+.title-text{
   margin-left: 30rpx;
   padding: 30rpx 0;
 

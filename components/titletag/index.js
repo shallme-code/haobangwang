@@ -27,6 +27,10 @@ Component({
      subtitle:{
        type:String,
        value:''
+     },
+     price:{
+       type:Number,
+       value:''
      }
 
   },

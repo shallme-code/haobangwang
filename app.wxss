@@ -21,12 +21,12 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 2291143 */
-  src: url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.eot');
-  src: url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2291143_rvdli1pqw2.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.eot');
+  src: url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -43,6 +43,9 @@
 }
 .icon-share:before{
   content: '\e606';
+}
+.icon-clip:before{
+  content: '\e701';
 }
 page {
   background: #f9fafb;
@@ -95,15 +98,18 @@ page {
 }
 .yellow{
   color:#FF9E20
-}
-.text-center {
-  text-align: center;
-}
+}  
  .spacing10{
   letter-spacing:10rpx
  }
+ .spacing6{
+  letter-spacing:6rpx
+ }
  .vertical-bom{
   vertical-align:bottom
+ }
+ .vertical-top{
+  vertical-align:top
  }
 .tit-btn3ra {
   border-radius: 0px 20px 20px 20px;
@@ -137,7 +143,10 @@ page {
   margin-top: 60rpx;
   position: relative;
 }
-
+.comcard{ 
+background: #F9FAFB;
+border-radius: 8rpx; 
+}
 .container30pad{
   height: 100%;
   padding: 30rpx;
@@ -302,6 +311,12 @@ font-weight: bold;
   background-color:rgba(255, 255, 255, 0.2);
 }
 
+.midl {
+	width: 84rpx;
+	height: 84rpx;
+	font-size: 2em;
+}
+
 .bg-trans {
   background-color: transparent;
 }
@@ -316,24 +331,60 @@ font-weight: bold;
 .margin20l{
   margin-left:20rpx;
 }
+.margin20r{
+  margin-right:20rpx;
+} 
+.margin30l{
+  margin-left:30rpx;
+}
 .margin25TOP {
   margin-top: 25rpx;
 }
 .margin20TOP {
   margin-top: 20rpx;
 }
+
 .margin15TOP{
   margin-top: 15rpx;
+}
+.margin10TOP{
+  margin-top: 10rpx;
 }
 .margbom30 {
   margin-bottom: 30rpx
 }
+.marginbom20{
+  margin-bottom: 20rpx;
+}
 .pad30{
   padding: 30rpx;
+} 
+.padlr30{
+  padding-left:30rpx;
+  padding-right:30rpx;
+} 
+.pad15{
+  padding:15rpx;
+}
+.padlr15{
+  padding:15rpx 0;
+}
+.padtm10{
+  padding:10rpx 0;
+}
+.padbom120 {
+  padding-bottom: 120rpx
+} 
+.padbom180 {
+  padding-bottom: 180rpx
 } 
 .padbom30{
   padding-bottom: 30rpx;
 } 
+.padbom20{
+  padding-bottom: 20rpx;
+}
+
 .padtop120 {
   padding-top: 120rpx
 } 
@@ -349,4 +400,26 @@ font-weight: bold;
 .botbtn{
   margin:50rpx 30rpx 60rpx 30rpx;
   width:690rpx;
+}
+.radius6{
+  border-radius:6rpx;
+}
+.radius8{
+  border-radius:8rpx;
+}
+.line48{
+  line-height: 48rpx;
+}
+.line36{
+  line-height: 36rpx;
+}
+.bomline{
+  border-bottom: solid 1rpx #F4F6F7;
+}
+.block120{
+  width:100%;
+  height: 120rpx;
+}
+.brother-line+.brother-line{
+  border-top:solid 1rpx #F3F4F5
 }

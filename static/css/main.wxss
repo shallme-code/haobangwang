@@ -757,10 +757,24 @@ radio.white[checked] .wx-radio-input {
 	font-size: 32rpx; 
 	height: auto; 
 }
+.cu-btn.mid26 {
+	padding: 20rpx 40rpx;
+	font-size: 26rpx;
+	height: auto; 
+}
+.cu-btn:active{ 
+background: linear-gradient(90deg, #319AFD, #0660FE);
+color: #fff;
+}
 .cu-btn.lg {
 	padding: 0 40rpx;
 	font-size: 32rpx;
 	height: 80rpx;
+}
+.cu-btn.xl {
+	padding: 24rpx 55rpx;
+	font-size: 28rpx;
+	height: auto; 
 }
 .cu-btn.sp {
 	padding: 0 31rpx;
@@ -977,6 +991,11 @@ button.icon.lg {
 .cu-avatar.lg {
 	width: 96rpx;
 	height: 96rpx;
+	font-size: 2em;
+}
+.cu-avatar.midl {
+	width: 84rpx;
+	height: 84rpx;
 	font-size: 2em;
 }
 

@@ -1,0 +1,8 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "titletag":"../../../../components/titletag/index",
+    "commentcard":"../../../../components/commentcard/index",
+    "btnbuy":"../../../../components/btnbuy/index"
+  }
+}

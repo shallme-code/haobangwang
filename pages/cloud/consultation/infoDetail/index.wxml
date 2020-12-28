@@ -1,4 +1,5 @@
 <!--pages/cloud/infodetail/index.wxml-->
+<scroll-view scroll-y='true'>
 <view class="bghead" style="background-image:url('{{infodetail.photo}}')  ">
   <view class="baseinfo">
     <view class="white title40 text-bold text-ellipsis">{{infodetail.name}}</view>
@@ -12,7 +13,7 @@
   <view class="baseinfobtm">
     <view class="flex flex-row align-end justify-around padbom30">
       <view class="flex flex-column ">
-        <view class="spacing10 text36">
+        <view class="spacing10 text36 ">
           <text class="cuIcon-favorfill lg yellow"></text>
           <text class="cuIcon-favorfill lg yellow"></text>
           <text class="cuIcon-favorfill lg yellow"></text>
@@ -39,12 +40,46 @@
     </view>
   </view>
 </view>
-<view class="container">
-  <view class="navinfo flex flex-row align-end  paddingtop20 ">
+<view class="padlr30 bgcwhite">
+  <view class="navinfo flex flex-row align-end  paddingtop20 padbom30">
     <view class="{{nowNav===0?'title34 bule fw500':'text30'}}" data-nav="0" bindtap="changeState">服务项目</view>
     <view class="{{nowNav===1?'title34 bule fw500':'text30'}}" data-nav="1" bindtap="changeState">个人介绍 </view>
     <view class="{{nowNav===2?'title34 bule fw500':'text30'}}" data-nav="2" bindtap="changeState">客户评价</view>
   </view>
-  <titletag title="服务项目" subtitle='服务器哦昂木' rightMore='查看评价'></titletag>
+  <titletag title="服务项目">
+  </titletag>
 </view>
+<view class="cu-list grid col-3 no-border">
+  <view wx:for="{{serPrj}}" class="pad15" wx:key="*this">
+    <view class="bg-whiteless pad30 radius6">
+      <image class="  midl" src="{{item.img}}" mode="aspectFill"></image>
+      <view class="title28 fw500 black24 margin20TOP ">{{item.title}}</view>
+      <view class="margin15TOP title22"><text class="red">￥</text><text
+          class="text30 red text-bold">{{item.price}}</text>/30分钟</view>
+    </view>
+  </view>
+</view>
+<view class="container padbom120">
+  <view class="">
+    <titletag title="个人介绍"></titletag>
+    <view class="comcard pad30 marginbom20">
+      <view class="text26 text-bold black padbom20">个人简介：</view>
+      <view class="text26 black line48">{{infodetail.profile}}</view>
+    </view>
+    <view class="comcard pad30">
+      <view class="text26 text-bold black padbom20">认证资质：</view>
+      <view class="text26 black line48">
+        <text class="margin20r" wx:for="{{infodetail.qualifications}}" wx:key="*this">{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="padbom30">
+    <titletag title="客户评价" rightMore="查看评价"></titletag>
+    <commentcard margintop="20" headUrl="{{item.thumb}}" name="{{item.name}}" score="{{item.score}}"
+      isvip="{{item.vip}}" date="{{item.date}}" comment="{{item.content}}" wx:for="{{comment}}" wx:key="*this">
+    </commentcard> 
+  </view> 
+</view>
+</scroll-view>
+<btnbuy btntext="立即购买" price="59"></btnbuy>
 <import src="../../template/cloud/navtitle.wxml"></import>

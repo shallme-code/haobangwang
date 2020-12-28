@@ -1,0 +1,64 @@
+<!--pages/mine/myOrder/index.wxml-->
+<view class="navtop flex flex-row justify-around">
+  <view class="navbtn" wx:for="{{navStatus}}" wx:key="*this">
+    <view class="width100 text-center {{status==item.id?'cu-btn mid bg-tobule tit-btn3ra':'text30 blackless'}}"
+      bindtap="changeState" data-state="{{item.id}}">{{item.title}}</view>
+  </view>
+</view>
+<view class="padtop120 padbom20">
+  <view class="order-card" wx:for="{{orderInfo}}" wx:key="*this">
+    <view class="service-info padbom30 bomline flex flex-row align-center">
+      <view>
+        <image src="{{item.thumb}}" mode="aspectFill"></image>
+      </view>
+      <view class="margin20l flex1 margin10TOP">
+
+        <view class="flex felx-row justify-between padbom20 align-end">
+          <view class="title36 text-ellipsis ">{{item.orderName}}</view>
+          <view wx:if="{{item.status===0}}" class="bule fw500 text32 text-ellipsis">
+            未支付
+          </view>
+          <view wx:if="{{item.status===1}}" class="bule fw500 text32 text-ellipsis">
+            待服务
+          </view>
+          <view wx:if="{{item.status===2}}" class="bule fw500 text32 text-ellipsis">
+            服务中
+          </view>
+          <view wx:if="{{item.status===3}}" class="bule fw500 text32 text-ellipsis">
+            已完成
+          </view>
+          <view wx:if="{{item.status===-1}}" class="bule fw500 text32 text-ellipsis">
+            已终止
+          </view>
+        </view>
+        <view class="title24 blackless text-ellipsis line48" wx:for="{{item.info}}" wx:key="index">{{item}}
+        </view>
+        <view class="title22 grey margin15TOP line36">
+          {{orderInfo.detail}}
+        </view>
+      </view>
+    </view>
+    <view class="pay-info flex flex-row justify-between align-end container30pad">
+      <view class="title24 silver ">
+        <view class="margbom30">下单时间：{{item.payTime}}</view>
+        <view>订单编号：{{item.orderNo}}</view>
+      </view>
+      <view class="text28 text-bold">实付：￥{{item.pay}}</view>
+    </view>
+    <view class="text-right">
+      <button class="cu-btn mid26 round margin30l silver">联系客服</button>
+      <button wx:if="{{item.status===1}}" class="cu-btn mid26 round margin30l silver">取消订单</button>
+      <button wx:if="{{item.status===3}}" class="cu-btn mid26 round margin30l  silver" bindtap="showComment"
+        data-id="{{item.orderId}}">查看评价<text class="iconfont icon-downtrig title24"></text></button> </view>
+    <view class="{{item.showComt?'show-comment animation-slide-top':'comment animation-slide-top animation-reverse'}}" wx:if="{{item.status===3}}">
+      <view wx:if="{{item.comment===''}}">您还没有评论哦，马上去给个好评吧！</view>
+      <view wx:elseif="{{item.comment!==''}}" > 
+          <view class="title24 flex flex-row align-center black margbom30">评分：<star size="28"></star></view>
+          <view class="title24 black line48 margbom30">{{item.comment.remark}}</view>
+          <view  >
+            <view wx:for="{{item.comment.tag}}" class="cu-tag radius  line-gray" wx:key="index">{{item}}</view>
+          </view>  
+      </view>
+    </view>
+  </view>
+</view>

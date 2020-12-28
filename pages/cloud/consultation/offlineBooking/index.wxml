@@ -1,0 +1,22 @@
+<!--pages/cloud/consultation/offlineBooking/index.wxml-->
+<view class="height100 width100 bgcwhite">
+<view class="container30pad ">
+  <view class="bookcard">
+    <titletag title="见面地点"></titletag>
+    <option title="请选择见面地点" titleColor="#ABAFB3" titleSize="26"></option>
+  </view>
+  <view class="bookcard">
+    <titletag title="见面时间"></titletag>
+    <option title="请选择期望见面时间" titleColor="#ABAFB3" titleSize="26"></option>
+  </view>
+  <view class="bookcard">
+    <titletag title="问题描述"></titletag>
+    <view class="text">
+    <textarea type="text" maxlength="500" placeholder="请简要描述您的问题（500字以内）"></textarea>
+    <view class="title24 silver text-right">0/500</view>
+    </view>
+  </view>
+  
+</view>
+<button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button">提交信息</button>
+</view>

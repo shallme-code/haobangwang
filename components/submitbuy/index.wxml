@@ -1,0 +1,13 @@
+<!--components/btnbuy/index.wxml-->
+<view class="btnbuy">
+  <view class="justify-center text-center margin30l">
+    <image src="../../static/tabbar/service.png" mode="aspectFill"></image>
+    <view class="title22 black">客服</view>
+  </view>
+  <view class="flex flex-row align-center">
+    <view>
+    实付：<text class="red title22 margin20r">￥<text class="text36">{{price}}</text></text>
+    </view>
+    <button class="cu-btn xl round bg-tobule margin30l">{{btntext}}</button>
+  </view>
+</view>

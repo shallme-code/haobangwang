@@ -1,6 +1,0 @@
-{
-  "navigationStyle":"custom",
-  "usingComponents": {
-    "titletag":"../../../components/titletag/index"
-  }
-}

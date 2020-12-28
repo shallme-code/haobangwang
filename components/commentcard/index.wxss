@@ -1,0 +1,33 @@
+/* components/commentcard/index.wxss */
+.commentcard{
+width: 690rpx; 
+background: #F9FAFB;
+border-radius: 8px;
+padding:30rpx; 
+}
+.commentcard .user{
+  display:flex;
+  flex-direction: row;
+}
+.commentcard .user>view:last-child{
+  padding: 0 20rpx;
+}
+.commentcard .user .name{ 
+font-size: 26rpx;
+font-family: Source Han Sans CN;
+font-weight: bold;
+color: #383A3C; 
+}
+.commentcard .user image{
+ width:80rpx;
+ height:80rpx; 
+border-radius: 50%;
+}
+.commentcard .body{
+  margin-top:30rpx;
+}
+.commentcard .user .name image{
+  width: 24rpx;
+  height: 24rpx;
+  margin:0 6rpx;
+}
