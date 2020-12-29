@@ -21,15 +21,17 @@ padding:40rpx 30rpx;
   width: 170rpx;
   height: 200rpx;
   background: #C2CDD8;
-  border-radius: 6px; 
-  
+  border-radius: 6px;  
 } 
 .order-card .comment{
-  height: 0;
+  max-height: 0 ;
   transition:1s;
   overflow: hidden;
+  opacity: 0;
 }
 .order-card .show-comment{
-  height: auto;
+  max-height:300rpx;
   transition:1s;
+  opacity: 1;
+  overflow: hidden;
 }

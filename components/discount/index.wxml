@@ -1,0 +1,6 @@
+<!--components/discount/index.wxml-->
+
+<view class="discount">
+<view></view>
+<solt></solt>  
+</view>

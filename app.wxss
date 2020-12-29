@@ -21,12 +21,12 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 2291143 */
-  src: url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.eot');
-  src: url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2291143_kuwlr0sw87.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2291143_j9l3k4300z.eot');
+  src: url('//at.alicdn.com/t/font_2291143_j9l3k4300z.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -47,6 +47,9 @@
 .icon-clip:before{
   content: '\e701';
 }
+.icon-checkfull:before{
+  content: '\e60e';
+}
 page {
   background: #f9fafb;
 }
@@ -58,7 +61,12 @@ page {
 .greyless {
   color: #BFC1C4
 }
-
+.lightgrey{
+  color: #f9fafb ;
+}
+.darkgrey{
+  color:#6E6C6C;
+}
 .greycc{
   color: #CCCDCE;
 }
@@ -76,11 +84,15 @@ page {
 .black {
   color: #383A3C
 }
-
+.blackgrey{
+  color: #787470;
+}
 .black24 {
   color: #282424;
 }
-
+.dark{
+  color:#32312D;
+}
 .blackless {
   color: #6f6f6f;
 }
@@ -98,6 +110,9 @@ page {
 }
 .yellow{
   color:#FF9E20
+}
+.yellowgold{
+  color: #D18E64;
 }  
  .spacing10{
   letter-spacing:10rpx
@@ -180,6 +195,10 @@ box-shadow: 0px 1rpx 10rpx 0px rgba(118, 118, 118, 0.14);
 .flex-column {
   flex-direction: column;
 }
+.title48{
+  font-size: 48rpx;
+  font-family: Source Han Sans CN;
+   }
 .title40{
 font-size: 40rpx;
 font-family: Source Han Sans CN;
@@ -192,8 +211,7 @@ font-weight: bold;
 .title34 {
   font-size: 34rpx;
   font-family: Source Han Sans CN;
-  font-weight: 500;
-}
+ }
 
 .title32 {
   font-size: 32rpx;
@@ -225,8 +243,7 @@ font-weight: bold;
 
 .text36 {
   font-size: 36rpx;
-  font-family: Source Han Sans CN;
-  font-weight: bold;
+  font-family: Source Han Sans CN; 
 }
 
 .title28 {
@@ -381,6 +398,9 @@ font-weight: bold;
 .padbom30{
   padding-bottom: 30rpx;
 } 
+.padbom40{
+  padding-bottom:40rpx ;
+}
 .padbom20{
   padding-bottom: 20rpx;
 }
@@ -409,6 +429,9 @@ font-weight: bold;
 }
 .line48{
   line-height: 48rpx;
+}
+.line100{
+  line-height: 100rpx;
 }
 .line36{
   line-height: 36rpx;

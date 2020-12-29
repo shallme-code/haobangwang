@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/mine/myCount/index",
+    "pages/mine/specialServices/index",
+    "pages/mine/member/index",
     "pages/mine/myOrder/index",
     "pages/cloud/contract/index",
     "pages/cloud/contract/contractReview/index",
@@ -11,7 +14,6 @@
     "pages/tabbar/home/index",
     "pages/tabbar/mine/index",
     "pages/tabbar/knowledge/index"
-    
   ],
   "window": {
     "backgroundTextStyle": "dark",

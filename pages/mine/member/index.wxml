@@ -1,0 +1,69 @@
+<!--pages/mine/member/index.wxml-->
+<view class="mermber-card ">
+  <view class="merinfo flex flex-row align-center">
+    <view class="round">
+      <image class="round" src="../../../static/test/mermber-ava.jpg"></image>
+    </view>
+    <view class="margin20l">
+      <view class="title28 fw500 lightgrey">一天似一天</view>
+      <view class="title24 darkgrey margin10TOP">暂未开通会员</view>
+    </view>
+  </view>
+  <view class="join">
+    <view class="text36 text-bold dark">欢迎加入好棒英诺会员</view>
+    <view class="title24 flex flex-row justify-between margin20TOP">
+      <view>马上开通会员，享受更多会员权益</view>
+      <view>最低300元/月</view>
+    </view>
+  </view>
+</view>
+<view class="marginbom20">
+  <view class="title36 padlr30 margin20T">会员套餐推荐</view>
+  <view class="grid col-3  text-center pad15">
+    <view wx:for="{{recommend}}" wx:key="*this">
+      <view class="recd-card {{choose===item.id?'cardactive':''}}" bindtap="changRecd" data-id="{{item.id}}">
+        <text class="title26   yellowgold">{{item.title}}</text>
+        <text class="dark title24 line100 ">￥<text class="title40 text-bold">{{item.totalPrice}}</text></text>
+        <text class="title22 silver">平均{{item.permonth}}元每月</text>
+      </view>
+    </view>
+  </view>
+  <view class="padlr30">
+    <view class="vip-ad flex flex-row align-center justify-between">
+      <view class="title38 gold"> 创建企业云端 选择专属专家</view>
+      <view class="gold title24">立即开通 <text class="iconfont icon-right"></text></view>
+    </view>
+  </view>
+  <view class="text36 padlr30 text-medium margin20T padtop40">英诺会员享<text class="title48 yellowgold">6</text>大会员权益</view>
+  <view class="grid col-3  text-center pad30">
+    <view class="subfit" wx:for="{{benefits}}" wx:key="id">
+      <view>
+        <image src="{{item.thumb}}" mode="aspectFit"></image>
+      </view>
+      <view class="title24 black margin25TOP text-ellipsis">
+        {{item.subtitle}}
+      </view>
+    </view>
+
+  </view>
+  <view class="container30pad">
+    <view class="benefits-card" wx:for="{{benefits}}" wx:key="id">
+      <view class="title34 text-bold">{{item.title}}</view>
+      <view class="title26 black padbom20 padtop40 grid col-3">
+        <view wx:for="{{item.tag}}" class="text-ellipsis" wx:key="*this"><text class="iconfont icon-checkfull title26 "></text>  {{item}}</view>
+      </view>
+      <view class="title22 blackgrey line36">
+        <view wx:for="{{item.content}}" class="margin25TOP" wx:key="*this">{{item}}</view>
+      </view>
+      <view class="benetag"  >
+            <image  src="../../../static/img/bene.png" mode="aspectFit">
+              <view class=" title24 line48 dark text-center">权益{{item.id}}</view>
+            </image>
+          </view>
+    </view>
+  </view>
+   
+    <button class="botbtn cu-btn round cu-btnfont26 sp bg-yingnuo " role="button">
+      <view class="bot-left">英诺会员最低300元/月</view><view class="bot-right">立即充值</view></button>
+  
+</view>

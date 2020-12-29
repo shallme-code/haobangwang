@@ -1,0 +1,32 @@
+/* pages/mine/specialServices/index.wxss */
+.body{
+  height: 100%;
+  width: 100%;
+  padding:5rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.services-card{
+  width: 320rpx;
+height: 354rpx;
+background: #F5F7F8;
+border-radius: 8rpx; 
+margin:25rpx;
+padding:50rpx 30rpx;
+}
+.services-card view{
+  display: inline-block;
+}
+.services-card:active{ 
+  background: #F2F9FF;
+}
+.services-card>view:nth-child(2){
+  height: 130rpx;
+  line-height: 36rpx;
+  padding-top: 30rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}

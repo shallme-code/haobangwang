@@ -1,0 +1,13 @@
+<!--pages/mine/specialServices/index.wxml-->
+<view class="body">
+  <view class="grid col-2">
+    <view wx:for="{{services}}" wx:key="*this">
+      <view class="services-card ">
+        <view class="text30 text-bold black24 text-ellipsis">{{item.title}}</view>
+        <view class="title24 silver ">{{item.content}}</view>
+        <view class="red title22 padtm10 text-ellipsis">￥<text class="text36 text-bold">{{item.price}}</text></view>
+        <view class="title22 grey text-ellipsis">{{item.subtitle}}</view>
+      </view>
+    </view>
+  </view>
+</view>

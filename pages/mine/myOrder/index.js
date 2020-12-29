@@ -60,6 +60,23 @@ Page({
       remark:'国门打开后很多会计人热衷于考ACCA等洋证。目前，市场上对会计人员最认可的是注册会计师证书。',
       tag:['服务周到','态度良好','专业性强']
     }
+  },
+  {
+    orderId:34,
+    status:3,
+    type:1,
+    thumb:'../../../static/test/05.jpg',
+    orderNo:1595545215451545,
+    orderName:'电话咨询',
+    info:['服务会计：张明晓','见面时间：2020-10-10  14:11','见面地点：成都市武侯区台上科技大厦'] ,
+    payTime:'2020-10-10',
+    pay:28,
+    showComt:false,
+    comment:{
+      score:5,
+      remark:'国门打开后很多会计人热衷于考ACCA等洋证。目前，市场上对会计人员最认可的是注册会计师证书。',
+      tag:['服务周到','态度良好','专业性强']
+    }
   },]
   },
  
@@ -98,8 +115,7 @@ Page({
     orders = this.data.orderInfo,_this=this;
     for(let o in orders){
        if(orders[o].orderId===showid){ 
-        orders[o].showComt=!orders[o].showComt;
-        console.log(1);
+        orders[o].showComt=!orders[o].showComt; 
         _this.setData({
           orderInfo:orders
         });

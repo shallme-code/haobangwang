@@ -1,0 +1,163 @@
+/* pages/mine/member/index.wxss */
+page {
+  background: #ffffff;
+}
+
+.mermber-card {
+  width: 100%;
+  min-height: 290rpx;
+  background: linear-gradient(0deg, #151515 0%, #3F3939 100%);
+  margin-bottom: 100rpx;
+  padding: 30rpx;
+  position: relative;
+
+}
+
+.mermber-card .merinfo>view:first-child {
+  width: 80rpx;
+  height: 80rpx;
+  border: solid 2rpx #FFF6E7;
+  border-radius: 40rpx;
+}
+
+.mermber-card .merinfo>view:first-child image {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: var(--white);
+  white-space: nowrap;
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.mermber-card .join {
+  width: 690rpx;
+  min-height: 198rpx;
+  background: linear-gradient(90deg, #FCE8D2 0%, #F2BD82 100%);
+  border-radius: 0 30rpx 0 30rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: -60rpx;
+  padding: 50rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: column;
+}
+
+.mermber-card .join>view {
+  width: 100%;
+
+}
+
+.mermber-card .join>view:last-child {
+  width: 100%;
+  align-self: flex-end;
+}
+
+.recd-card {
+  background: #FCF8F3;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  padding: 40rpx 10rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardactive {
+  border: 1rpx solid #EEAA7F;
+}
+
+.cardactive::after {
+  position: absolute;
+  font-family: "cuIcon";
+  content: "\e645";
+  width: 50rpx;
+  height: 50rpx;
+  background: #EEAA7F;
+  color: #ffffff;
+  font-weight: bold;
+  bottom: -15rpx;
+  right: -15rpx;
+  border-radius: 30rpx;
+  text-indent: 5rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+.vip-ad {
+  width: 690rpx;
+  background: linear-gradient(90deg, #343434 0%, #161616 100%);
+  border-radius: 40rpx 40rpx 0px 0px;
+  padding: 30rpx;
+}
+
+.subfit {
+  padding: 40rpx 0;
+}
+
+.subfit>view:first-child image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.benefits-card {
+  width: 690rpx;
+  background: linear-gradient(0deg, #FBE0C4, #FFF9F2);
+  border-radius: 8rpx;
+  margin-top: 30rpx;
+  padding: 50rpx 30rpx;
+  position: relative;
+}
+
+.benefits-card .benetag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100rpx;
+  height: 50rpx;
+}
+
+.benefits-card .benetag image {
+  width: 100%;
+  height: 100%;
+}
+
+.benefits-card .benetag view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bot-left {
+  width: 470rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #F0CE9E;
+}
+
+.bot-right {
+  width: 260rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #32312D;
+}
+.bg-yingnuo{
+  
+background: linear-gradient(120deg, #3F3939 , #151515 65%,#FAE4CB 65%, #F1B676); 
+}
