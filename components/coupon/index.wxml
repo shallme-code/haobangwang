@@ -1,0 +1,19 @@
+<!--components/discount/index.wxml-->
+
+<view class="coupon {{status===2? 'unclick':''}}">
+  <view class="cou-left">
+    <view class="decrease ellipsis" style="color:{{status===1?(type===1?'#FF364E':'#C17E34'):'#BFC1C4'}}">
+      {{decrease}}<text class="unit">{{type===1?'元':'折'}}</text></view>
+    <view class="requirement ellipsis" style="color:{{status===1?(type===1?'#BFC1C4':'#C2976E'):'#BFC1C4'}}">
+      {{requirement}}</view>
+  </view>
+  <view class="cou-mid">
+    <view class="title ellipsis" style="color:{{status===1?'#282424':'#BFC1C4'}}">{{title}}</view>
+    <view class="restriction ellipsis" style="color:{{status===1?'#8D8E8F':'#BFC1C4'}}">{{restriction}}</view>
+    <view class="validity ellipsis">{{validity}}</view>
+  </view>
+  <view class="cou-right {{status===1?(type===1?'type1':'type2'):'used'}}">立即使用</view>
+  <view class="usedtag" wx:if="{{status===2}}">
+    <view class="usedtag-text">已使用</view>
+  </view>
+</view>

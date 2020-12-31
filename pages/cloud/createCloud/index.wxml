@@ -1,0 +1,92 @@
+<!--pages/cloud/createCloud/index.wxml-->
+<view class="navtop">
+  <view class="flex steps steps-bottom">
+    <view class="steps-item {{index>basics?' ':'text-blue'}}" wx:for="{{basicsList}}" wx:key="*this">
+      <view class="step-icon  {{index>basics?'bg-whiteless':'bg-toblue'}}">
+        <text class=" iicon iconfont icon-{{item.icon}} "></text>
+      </view>
+      <view class="title26 margin20TOP {{index>basics?'blackless':'text-blue'}}">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="create-body">
+  <view wx:if="{{basics===0}}" class="animation-slide-right">
+    <view class="main">
+      <view class="padbom180">
+        <titletag title="企业基本信息" titleColor="#282424"></titletag>
+        <view class="baseinfo">
+          <input type="text" maxlength="30" placeholder="请输入企业名称"></input>
+        </view>
+        <view class="baseinfo">
+          <option title="请选择所属的行业" titleColor="#ABAFB3" titleSize="26"></option>
+        </view>
+        <view class="baseinfo">
+          <option title="请选择所在的地区" titleColor="#ABAFB3" titleSize="26"></option>
+        </view>
+      </view>
+    </view>
+    <button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button" bindtap="basicsSteps">下一步</button>
+  </view>
+  <view wx:if="{{basics===1}}">
+    <view class="assistant">
+      <titletag title="选择您的专属助理" titleColor="#282424"></titletag>
+      <view class=" ">
+        <text class="title24 grey line42 margbom30"> 您的企业云端配有1位您的专属助理，为您提供全程协助。产品问题、更换专家、催办合同等，专属助帮您解决。 </text>
+      </view>
+    </view>
+    <view class="accountant-card flex flex-row" wx:for="{{accountant}}" wx:key="index" bindtap="assistantChoose"
+      data-index="{{index}}">
+      <view>
+        <image src="{{item.thumb}}" mode="aspectFill"></image>
+      </view>
+      <view>
+        <view class="title flex flex-row justify-between align-end">
+          <view class="title36 text-ellipsis ">{{item.name}}</view>
+          <view class="check-full {{checkIndex!==index?'unchecked':'checked'}}"></view>
+        </view>
+        <view class="width100 blackless title26 text-ellipsis margbom30">{{item.qualifications}}</view>
+        <view>
+          <view class="cu-tag radius  line-gray" wx:for="{{item.serverTag}}" wx:key="index">
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button" bindtap="basicsSteps">下一步</button>
+  </view>
+  <view wx:if="{{basics===2}}">
+    <view class="expert">
+      <titletag title="选择您的专属专家" titleColor="#282424"></titletag>
+      <view class=" ">
+        <text class="title24 grey line42 margbom30">选择 5位成为您的专属专家，为您提供图文咨询、电话咨询等长期服务。</text>
+      </view>
+    </view>
+    <view class="expert-info" wx:for="{{expert}}" wx:key="index">
+      <view class="expert-option">
+        <view><text >{{item.title}}</text><text class="title22 grey margin20l">(选择 1位成为您的专属{{item.title}}）</text></view>
+        <view class="title22 greycc iconfont icon-right"></view>
+      </view>
+      <view class="expert-content ">
+        <view class="accountant-card flex flex-row" wx:for="{{accountant}}" wx:key="index" bindtap="assistantChoose"
+          data-index="{{index}}">
+          <view>
+            <image src="{{item.thumb}}" mode="aspectFill"></image>
+          </view>
+          <view>
+            <view class="title flex flex-row justify-between align-end">
+              <view class="title36 text-ellipsis ">{{item.name}}</view>
+              <view class="check-full {{checkIndex!==index?'unchecked':'checked'}}"></view>
+            </view>
+            <view class="width100 blackless title26 text-ellipsis margbom30">{{item.qualifications}}</view>
+            <view>
+              <view class="cu-tag radius  line-gray" wx:for="{{item.serverTag}}" wx:key="index">
+                {{item}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class="botbtn cu-btn round cu-btnfont26 sp bg-tobule" role="button" bindtap="basicsSteps">下一步</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/mine/myAdviser/index.wxml-->
+<view class="padbom120">
+  <view class="accountant-card flex flex-row" wx:for="{{accountant}}" wx:key="*this">
+    <view>
+      <image src="{{item.thumb}}" mode="aspectFill"></image>
+    </view>
+    <view>
+      <view class="title flex flex-row">
+        <view>
+          <view class="title36 text-ellipsis ">{{item.name}}</view>
+          <view>
+            <star size="24" starSpace="4"></star>
+          </view>
+        </view>
+        <view class="flex flex-row">
+          <button class="cu-btn round cu-btnfont24 silver">电话沟通</button>
+          <button class="cu-btn round cu-btnfont24 silver">在线联系</button>
+        </view>
+      </view>
+      <view class="width100 blackless title26 text-ellipsis">{{item.qualifications}}</view>
+      <view>
+        <view class="cu-tag radius  line-gray" wx:for="{{item.serverTag}}" wx:key="*this">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

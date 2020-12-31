@@ -1,0 +1,23 @@
+.navtop {
+  width: 100%;
+  padding:30rpx 0;
+  background: #FFFFFF;
+  box-shadow: 0 1rpx 10rpx 0 rgba(118, 118, 118, 0.14);
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left: 0;
+}
+.navbtn{  
+  line-height: 60rpx;
+  padding:0 30rpx;
+}
+.book-card{
+  width: 100%;
+  padding: 40rpx  ;
+  background: #ffffff;
+  margin-top:20rpx;
+}
+.nowarp{
+  white-space:nowrap
+}

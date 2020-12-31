@@ -5,7 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    myCount:[{
+      type:1,
+      status:1,
+      title:'公司注册专项券',
+      restriction:'仅限购买公司注册相关业务',
+      decrease:'20',
+      requirement:'满200元可用',
+      validity:'2020.11.10-2020.12.09'
+    },
+    {
+      type:1,
+      status:1,
+      title:'公司注册专项券',
+      restriction:'仅限购买公司注册相关业务',
+      decrease:'20',
+      requirement:'满200元可用',
+      validity:'2020.11.10-2020.12.09'
+    },
+    {
+      type:1,
+      status:1,
+      title:'公司注册专项券',
+      restriction:'仅限购买公司注册相关业务',
+      decrease:'20',
+      requirement:'满200元可用',
+      validity:'2020.11.10-2020.12.09'
+    },
+    {
+      type:2,
+      status:1,
+      title:'会员见会计折扣券',
+      restriction:'仅限购买见会计业务使用',
+      decrease:'8',
+      requirement:'会员专用',
+      validity:'2020.11.10-2020.12.09'
+    },
+    {
+      type:1,
+      status:2,
+      title:'全场通用满减券',
+      restriction:'全场购买满1000元均可使用',
+      decrease:'50',
+      requirement:'满1000元可用',
+      validity:'2020.11.10-2020.12.09'
+    }]
   },
 
   /**

@@ -1,0 +1,152 @@
+/* components/discount/index.wxss */
+.coupon {
+  width: 690rpx;
+  height: 200rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background:
+  radial-gradient(ellipse 40rpx  55rpx at right, transparent 25rpx, #ffffff 0) right,
+  radial-gradient(ellipse 40rpx  55rpx at -2rpx 100rpx, transparent 25rpx, #ffffff 0) left;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.coupon .cou-left {
+  width: 190rpx;
+  height: 200rpx;
+  padding: 30rpx;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #F4F6F7;
+}
+
+.coupon .cou-left .decrease {
+  font-size: 62rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+   line-height: 50rpx;
+}
+
+.coupon .cou-left .unit {
+  font-size: 36rpx;
+}
+
+.coupon .cou-left .requirement {
+  font-size: 20rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #BFC1C4;
+  padding-top: 20rpx
+}
+
+.coupon .cou-mid {
+  width: 410rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coupon .cou-mid .title {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #282424;
+}
+
+.coupon .cou-mid .restriction {
+ 
+  font-size: 22rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #8D8E8F;
+  padding: 10rpx 0;
+}
+
+.coupon .cou-mid .validity {
+  font-size: 22rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #BFC1C4;
+  padding-top: 5rpx;
+}
+.ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.coupon .cou-right{
+  writing-mode:vertical-rl; 
+font-size: 26rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #ffffff; 
+letter-spacing: 10rpx; 
+border-radius: 8rpx;
+ height: 100%;
+ flex: 1; 
+text-align: center; 
+line-height:   90rpx;
+}
+.type1:active{
+  background: radial-gradient(ellipse 40rpx  55rpx at  92rpx 100rpx, transparent 25rpx, #dd2f44 0) right;
+}
+.type2:active{
+  background:
+  radial-gradient(ellipse 40rpx  55rpx  at  92rpx 100rpx, transparent 25rpx,#B9752A 0) right
+}
+.type1{
+  background: radial-gradient(ellipse 40rpx  55rpx  at 92rpx 100rpx, transparent 25rpx, #FF364E 0) right; 
+}
+.type2{ 
+   background:
+   radial-gradient(ellipse 40rpx  55rpx  at  92rpx 100rpx, transparent 25rpx,#E6AA64 0) right
+ }
+ .used{ 
+background:
+radial-gradient(ellipse 40rpx  55rpx  at  92rpx 100rpx, transparent 25rpx, #DEDEDE 0) right;
+position: relative;
+ }
+ .usedtag{
+ content:'已使用';
+ position: absolute;
+width: 126rpx;
+height: 126rpx;
+background: transparent; 
+writing-mode:horizontal-tb; 
+top: 20rpx;
+right:110rpx;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius:63rpx ;
+border: solid 1rpx #BFC1C4;
+}
+.usedtag .usedtag-text{
+  color: #BFC1C4; 
+  font-size: 22rpx;
+  line-height:44rpx;
+  border-top:solid 1rpx #BFC1C4 ;
+  border-bottom:solid 1rpx #BFC1C4 ;
+  padding: 0 5rpx;
+  transform:rotate(-33deg);
+}
+.usedtag::before{
+  content:' ';
+ position: absolute;
+width: 100rpx;
+height: 100rpx;
+border-radius:50rpx ;
+border: solid 1rpx #BFC1C4;
+}
+.unclick{
+  pointer-events: none
+}

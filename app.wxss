@@ -21,12 +21,12 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 2291143 */
-  src: url('//at.alicdn.com/t/font_2291143_j9l3k4300z.eot');
-  src: url('//at.alicdn.com/t/font_2291143_j9l3k4300z.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2291143_j9l3k4300z.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.eot');
+  src: url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2291143_jbxe3szht5g.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -49,6 +49,18 @@
 }
 .icon-checkfull:before{
   content: '\e60e';
+}
+.icon-edit:before{
+  content: '\e61b';
+}
+.icon-assistant:before{
+  content: '\e6b0';
+}
+.icon-expert:before{
+  content: '\e649';
+}
+.icon-checkround::before{
+  content: '\e68a';
 }
 page {
   background: #f9fafb;
@@ -101,6 +113,9 @@ page {
   color: #FFFFFF;
 }
 
+.blue {
+  color: #319AFD;
+}
 .bule {
   color: #319AFD;
 }
@@ -316,6 +331,10 @@ font-weight: bold;
   background: linear-gradient(90deg, #319AFD, #0660FE);
   color: #ffffff;
 }
+.bg-toblue {
+  background: linear-gradient(90deg, #319AFD, #0660FE);
+  color: #ffffff;
+}
 
 .bg-Lightblue {
   background: #E4F0FA;
@@ -380,6 +399,10 @@ font-weight: bold;
   padding-left:30rpx;
   padding-right:30rpx;
 } 
+.padtm30{
+  padding-top:30rpx;
+  padding-bottom:30rpx;
+} 
 .pad15{
   padding:15rpx;
 }
@@ -429,6 +452,9 @@ font-weight: bold;
 }
 .line48{
   line-height: 48rpx;
+}
+.line42{
+  line-height: 42rpx;
 }
 .line100{
   line-height: 100rpx;

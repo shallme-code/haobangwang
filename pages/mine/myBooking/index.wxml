@@ -1,0 +1,32 @@
+<!--pages/mine/myBooking/index.wxml-->
+<view class="navtop flex flex-row  ">
+  <view class="navbtn" wx:for="{{navStatus}}" wx:key="id">
+    <view class="width100 text-center {{status==item.id?'cu-btn mid bg-tobule tit-btn3ra':'text30 blackless'}}"
+      bindtap="changeState" data-state="{{item.id}}">{{item.title}}</view>
+  </view>
+</view>
+<view class="padtop120 padbom20"> 
+  <view class="book-card" wx:for="{{booking}}">
+    <view class="flex felx-row justify-between padbom30 align-center">
+      <view class="title36">{{item.title}}</view>
+      <view wx:if="{{item.status===0}}" class="red fw500 text32 text-ellipsis">
+            未支付
+          </view>
+          <view wx:if="{{item.status===1}}" class="grey  fw500 text32 text-ellipsis">
+            待审核
+          </view>
+          <view wx:if="{{item.status===2}}" class="blue fw500 text32 text-ellipsis">
+            审核通过
+          </view>
+          <view wx:if="{{item.status===3}}" class="blue fw500 text32 text-ellipsis">
+            已完成
+          </view>
+          <view wx:if="{{item.status===-1}}" class="red fw500 text32 text-ellipsis">
+            审核未通过
+          </view>
+    </view>
+    <view class="title24 blackless text-ellipsis">见面地点：{{item.meeting}}</view>
+    <view class="title24 blackless margin20TOP text-ellipsis">期望时间：{{item.date}}</view>
+    <view class="title24 grey margin20TOP line48 flex flex-row"><view class="radio-group nowarp">问题描述：</view><view class="radio-group">{{item.description}}</view></view>
+  </view>
+</view>

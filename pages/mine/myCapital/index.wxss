@@ -1,0 +1,18 @@
+/* pages/mine/myCapital/index.wxss */
+.cap-card{
+  width: 690rpx;
+ background: #FFFFFF;
+border-radius: 8rpx;
+margin-top: 20rpx;
+}
+.cap-card>view:last-child{
+  padding:60rpx 0 51rpx 0
+}
+.cap-card .used,.cap-card .total{
+  width: 31%; 
+}
+.cap-card .remainder{
+  width: 38%;
+  border-left: solid 1rpx #F4F6F7;
+  border-right: solid 1rpx #F4F6F7;
+}

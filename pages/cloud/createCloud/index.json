@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "titletag":"../../../components/titletag/index",
+    "option":"../../../components/option/index"
+  }
+}

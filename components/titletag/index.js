@@ -31,6 +31,14 @@ Component({
      price:{
        type:Number,
        value:''
+     },
+     btnText:{
+      type:String,
+      value:''
+     },
+     titleColor:{
+       type:String,
+       value:""
      }
 
   },

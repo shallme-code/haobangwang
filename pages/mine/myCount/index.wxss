@@ -1,1 +1,6 @@
 /* pages/mine/myCount/index.wxss */
+.my-coupon{
+  padding: 15rpx 0;
+  width: 100%;
+ 
+}

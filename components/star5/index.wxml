@@ -1,8 +1,8 @@
 <!--components/star5/index.wxml-->
-<view style="font-size:{{size}}rpx;color:{{lightColor}};letter-space:{{starSpace}}">
-  <text class="cuIcon-favorfill  "></text>
-  <text class="cuIcon-favorfill  "></text>
-  <text class="cuIcon-favorfill  "></text>
-  <text class="cuIcon-favorfill  "></text>
-  <text class="cuIcon-favorfill  "></text>
+<view style="font-size:{{size}}rpx;color:{{lightColor}};letter-space:{{starSpace}}rpx">
+  <text class="cuIcon-favorfill  " style=" padding-right:{{starSpace}}rpx"></text>
+  <text class="cuIcon-favorfill  " style=" padding-left:{{starSpace}}rpx;padding-right:{{starSpace}}rpx"></text>
+  <text class="cuIcon-favorfill  " style=" padding-left:{{starSpace}}rpx;padding-right:{{starSpace}}rpx"></text>
+  <text class="cuIcon-favorfill  " style=" padding-left:{{starSpace}}rpx;padding-right:{{starSpace}}rpx"></text>
+  <text class="cuIcon-favorfill  " style=" padding-left:{{starSpace}}rpx"></text>
 </view>

@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/cloud/createCloud/index",
+    "pages/mine/myBooking/index",
+    "pages/mine/myAdviser/index",
+    "pages/mine/myCapital/index",
     "pages/mine/myCount/index",
     "pages/mine/specialServices/index",
     "pages/mine/member/index",

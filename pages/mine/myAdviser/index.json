@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的顾问",
+  "usingComponents": {
+    "star":"../../../components/star5/index"
+  }
+}

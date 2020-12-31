@@ -1,0 +1,26 @@
+<!--pages/mine/myCapital/index.wxml-->
+<view class="padlr30 padbom120">
+  <view class="cap-card" wx:for="{{capital}}" wx:key="*this">
+    <view class="padlr30 bomline">
+      <titletag title="见面地点" titleSize="32" isRightBtn="true" btnText="再次购买"></titletag>
+    </view>
+    <view class="flex flex-row align-center  ">
+      <view class="used text-center padlr30">
+         
+          <view class="title48 fw500">{{item.used}}<text class="title30">次</text></view>
+          <view class="title24 grey">已用次数</view>
+      
+      </view>
+      <view class="remainder text-center">
+        <view class="title48 fw500 blue">{{item.remainder}}<text class="text30">次</text></view>
+        <view class="title24 grey">剩余次数</view>
+      </view>
+      <view class="total text-center padlr30">
+       
+          <view class="title48 fw500">{{item.total}}<text class="title30">次</text></view>
+          <view class="title24 grey">总计次数</view>
+         
+      </view>
+    </view>
+  </view>
+</view>

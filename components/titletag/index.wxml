@@ -1,14 +1,15 @@
 <!--components/titletag/index.wxml-->
 <view class="titletag flex flex-row align-center">
    <view class="title-icon"></view>
-   <view class="title-text flex flex1 flex-row align-end justify-between">
-      <view>
-         <text class="text32 text-bold">{{title}}</text>
-         <text wx:if="{{subtitle!==''}}" class="title24 greyless margin20l vertical-bom">{{subtitle}}</text>
+   <view class="title-text flex flex1 flex-row {{isRightBtn?'align-center':'align-end'}} justify-between">
+      <view class="flex   flex-row  align-end " >
+         <view class="text32 text-bold" style="color:{{titleColor}}">{{title}}</view>
+         <view wx:if="{{subtitle!==''}}" class="title24 greyless margin20l vertical-bom">{{subtitle}}</view>
       </view>
-      <view class="flex flex-row align-end">
+      <view class="flex flex-row  {{isRightBtn?'align-center':'align-end'}}">
          <view wx:if="{{rightMore!==''}}" class="title24 grey">{{rightMore}}</view>
          <view wx:if="{{price!==''}}" class="title24 red">￥<text class="text36 fw500">{{price}}</text>起</view>
+         <button wx:if="{{isRightBtn}}" class="cu-btn  mider round silver">{{btnText}}</button>
       </view>
    </view>
 </view>  

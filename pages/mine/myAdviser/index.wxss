@@ -1,0 +1,32 @@
+/* pages/mine/myAdviser/index.wxss */
+.accountant-card{
+  width: 100%;
+  padding: 40rpx 30rpx;
+  background: #ffffff;
+  margin-top:20rpx; 
+}
+.accountant-card>view:first-child,.accountant-card>view:first-child image{
+  width:170rpx;
+  height: 200rpx; 
+  border-radius: 6rpx;
+}
+.accountant-card>view:last-child{
+  width: 520rpx;
+  padding-left:30rpx
+}
+.accountant-card  .title>view:first-child{
+  width: 180rpx; 
+} 
+.accountant-card  .title>view:first-child>view:first-child{
+  margin-bottom: 15rpx; 
+}
+.accountant-card  .title>view:last-child{
+  flex: 1;
+  padding-top:9rpx; 
+}
+.accountant-card  .title>view:last-child>button:first-child{
+   margin-right:20rpx;
+}
+.accountant-card>view:last-child>view:nth-child(2){ 
+  padding:15rpx 0;
+}

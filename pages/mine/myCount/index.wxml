@@ -1,2 +1,13 @@
 <!--pages/mine/myCount/index.wxml-->
-<text>pages/mine/myCount/index.wxml</text>
+<view class="padlr30 margin15TOP">
+<view class="my-coupon" wx:for="{{myCount}}" wx:key="*this">
+  <coupon 
+      type="{{item.type}}"
+      status="{{item.status}}"
+      title='{{item.title}}'
+      restriction="{{item.restriction}}"
+      decrease="{{item.decrease}}"
+      requirement="{{item.requirement}}"
+      validity="{{item.validity}}"></coupon>
+</view>
+</view>
